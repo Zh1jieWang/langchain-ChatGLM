@@ -8,7 +8,7 @@ from models.base import (BaseAnswer,
 
 class ChatGLM(BaseAnswer, LLM, ABC):
     max_token: int = 10000
-    temperature: float = 0
+    temperature: float = 0.00001
     top_p = 0.9
     checkPoint: LoaderCheckPoint = None
     # history = []
